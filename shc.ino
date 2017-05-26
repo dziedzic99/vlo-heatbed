@@ -6,9 +6,9 @@ float c1 = 1.009249522e-03, c2 = 2.378405444e-04, c3 = 2.019202697e-07;
 String inputString = "";
 boolean stringComplete = false;
 float desired = -273.15;
-int outputPin = 2;
+int outputPin = 3;
 int delayConst = 100; //in miliseconds
-
+int power = 1;
 void setup()
 {
  Serial.begin(9600); 
@@ -39,7 +39,7 @@ void loop()
   }
   if (T<desired)
   {
-    digitalWrite(outputPin, HIGH);
+    analogWrite(outputPin, power);
   }
   else
   {
