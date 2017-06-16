@@ -45,7 +45,7 @@ entryPort.insert(tk.END, str(port))
 setbutt.pack(in_=frame2, side=tk.LEFT)
 copyright.pack(in_=frame3, side=tk.LEFT, fill=tk.BOTH, expand=True)
 cbox.insert(tk.END, "C")
-copyright.insert(tk.END, "Copyright by Jan Dziedzic")
+copyright.insert(tk.END, "Copyright by Jan Dziedzic 2017")
 
 
 def aborter():
